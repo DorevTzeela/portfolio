@@ -65,18 +65,9 @@ a { color: inherit; text-decoration: none; }
 .spark { position: absolute; color: #7eb8ff; font-size: 1.5rem; }.spark-a { top: 13%; right: 15%; }.spark-b { bottom: 25%; left: 26%; font-size: 2.4rem; }.spark-c { top: 35%; left: 5%; font-size: .9rem; }
 .about { padding-block: 70px; }
 .about-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(40px, 8vw, 100px); align-items: center; }
-.photo-window { height: 280px; position: relative; overflow: hidden; border-radius: 14px; background: linear-gradient(135deg,#e6f0fa,#cbdff0 65%,#eff6fb); box-shadow: var(--shadow); }
-.photo-window::before { content: ""; position: absolute; inset: 0 0 35% 0; background: linear-gradient(90deg,transparent 48%,#fff9 49%,#fff9 51%,transparent 52%), linear-gradient(#f8fcff 0 65%,#dceaf6 65%); }
-.photo-window::after { content: ""; position: absolute; bottom: 0; right: 0; left: 0; height: 34%; background: linear-gradient(165deg,#d2e0ef,#f8fbff); border-top: 3px solid #c5d7e9; }
-.desk-laptop { position: absolute; z-index: 2; bottom: 23%; right: 15%; width: 54%; height: 47%; transform: skewY(-5deg); }
-.desk-laptop div { height: 86%; background: linear-gradient(135deg,#263b58,#0f1f36); border: 7px solid #b8c9dc; border-radius: 8px; box-shadow: 0 10px 20px #6c89a24a; }
-.desk-laptop span { display: block; width: 112%; margin-right: -6%; height: 10px; background: #cbd9e8; border-radius: 0 0 9px 9px; }
-.notebook { position: absolute; z-index: 3; bottom: 16%; left: 9%; width: 28%; height: 7%; background: #fff; border: 2px solid #d2e0ef; transform: rotate(-5deg); box-shadow: 0 7px 10px #7e9db52a; }
-.desk-plant { position: absolute; z-index: 3; right: 7%; top: 24%; width: 42px; height: 70px; }
-.desk-plant i { position: absolute; bottom: 22px; right: 13px; width: 17px; height: 37px; background: #69bd9d; border-radius: 100% 0; transform: rotate(-20deg); }
-.desk-plant i:nth-child(2) { right: 0; transform: rotate(28deg); background: #8bd4b5; }
-.desk-plant i:nth-child(3) { right: 16px; height: 25px; transform: rotate(-45deg); background: #3fa482; }
-.photo-caption { position: absolute; z-index: 4; bottom: 12px; right: 16px; color: #617994; font-size: .75rem; }
+.photo-window { width:100%; aspect-ratio:3/2; position:relative; overflow:hidden; border-radius:18px; background:#f3f8ff; box-shadow:var(--shadow); }
+.photo-window img { display:block; width:100%; height:100%; object-fit:contain; }
+.photo-caption { margin-top:12px; text-align:center; color:#617994; font-size:.75rem; font-weight:600; }
 .section-copy p:not(.eyebrow) { color: var(--muted); margin: 12px 0; }
 .section-copy .button { margin-top: 12px; }
 .section-title { margin: 0 0 18px; font-size: clamp(1.65rem, 3vw, 2rem); line-height: 1.35; font-weight: 800; position: relative; }
